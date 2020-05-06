@@ -1,0 +1,64 @@
+/* Structure  */
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image {
+  flex: 1 200px;
+  padding-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* Input  */
+
+.searchbar input {
+  width: 100%;
+  padding: 10px;
+  margin: 30px 0 20px;
+  border: 2px solid #ECECEC;
+  border-radius: 3px;
+  outline: none;
+}
+
+body {
+  font-family: Arial;
+}
+
+@media (min-width: 500px) {
+  .image {
+    padding: 5px;
+    flex: 1 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchbar input {
+    width: 50%;
+  }
+
+  .searchbar {
+    text-align: center;
+  }
+
+  .image {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .image {
+    padding: 20px;
+  }
+}
