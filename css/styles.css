@@ -3,22 +3,17 @@
 .wrapper {
   margin: 0 auto;
   width: 80%;
-  max-width: 900px;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-a {
-  max-width: 225px;
+  justify-content: flex-start;
 }
 
 .image {
-  flex: 1 200px;
-  padding-bottom: 20px;
+  flex: 1 100%;
+  margin-bottom: 20px;
 }
 
 .image img {
@@ -40,10 +35,15 @@ body {
   font-family: Arial;
 }
 
+.lb-closeContainer {
+  display: none;
+}
+
+
 @media (min-width: 500px) {
   .image {
-    padding: 5px;
-    flex: 1 150px;
+    margin: 5px;
+    flex: 0 47.4%;
   }
 }
 
@@ -57,12 +57,26 @@ body {
   }
 
   .image {
-    padding: 15px;
+    margin: 15px;
+    flex: 0 28.3%;
+  }
+
+  /* Plugin Adjustment */
+
+  .lb-data {
+    width: 600px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1000px) {
   .image {
-    padding: 20px;
+    margin: 20px;
+    flex: 0 20.4%;
+  }
+
+  .wrapper {
+    width: 900px;
   }
 }
+
